@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#070d1b">
+  <meta name="description" content="NOVA, il tuo assistente virtuale.">
+  <title>NOVA — Assistente AI</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="brand"><span class="brand-dot"></span><span>NOVA</span></div>
+      <span class="status"><i></i> ONLINE</span>
+    </header>
+
+    <section class="hero" aria-label="NOVA">
+      <div class="orb">
+        <div class="face">
+          <div class="eye eye-left"><span></span></div>
+          <div class="eye eye-right"><span></span></div>
+        </div>
+        <div class="orb-ring ring-one"></div>
+        <div class="orb-ring ring-two"></div>
+      </div>
+      <h1>Ciao, sono NOVA.</h1>
+      <p id="subtitle">Sono qui. Di cosa vuoi parlare?</p>
+      <div class="listening" id="listening">TI STO ASCOLTANDO</div>
+    </section>
+
+    <section class="chat" id="chat" aria-live="polite">
+      <div class="message nova">
+        <span class="sender">NOVA</span>
+        Ciao! Puoi scrivermi oppure premere il microfono per parlarmi.
+      </div>
+    </section>
+
+    <form class="composer" id="composer">
+      <input id="message" autocomplete="off" placeholder="Scrivi un messaggio..." aria-label="Scrivi un messaggio">
+      <button class="send" type="submit" aria-label="Invia">➤</button>
+    </form>
+    <div class="controls">
+      <button id="mic" class="mic" type="button"><span>🎙</span> Parla con NOVA</button>
+      <button id="sound" class="sound active" type="button" aria-pressed="true">🔊 Voce attiva</button>
+    </div>
+    <p class="footnote">Versione iniziale · modalità demo vocale</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
